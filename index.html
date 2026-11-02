@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--html documents are mostly 2 parts. a head and a body. the head has the upper part of the website, and
+<!--html documents are mostly 2 parts. a head and a body. the head has the upper part of the website, and
     this is where you link all the connections to the website and where you give the website a name and title.-->
+
 <head>
     <!--linking makes sure the doccument i am writing in and the one i have linked can interact. this makes it
     so that i can still make changes to how something look even if im not in the page directly stated to affect it.-->
@@ -9,33 +10,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>im refreshing my memory</title>
-    
+
     <h1> i am writing code and this is code and this is code. not really this is just a header</h1>
     <!--hr tags are made as visible dividers between text. almost like how a newspaper sections off parts-->
     <hr>
 </head>
 <!--the main part of a html document is the body. this is where you write everything.-->
+
 <body>
     <!--writing explanations is useful for me to take thing the information of what i do as i do it.
     a h1 tag lets me create text in a big size.-->
     <h1> i really want to learn this skill</h1>
     <br>
     <!--h2 tags, similar to h1 tags just make the text bigger, but not as big as h1 tags do-->
-    <h2> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolor nobis eos tenetur sint aliquam autem culpa fuga quasi nesciunt molestiae earum ab in, perferendis sed labore nulla non consequatur.</h2>
+    <h2> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolor nobis eos tenetur sint aliquam autem
+        culpa fuga quasi nesciunt molestiae earum ab in, perferendis sed labore nulla non consequatur.</h2>
     <!--the br tag is a simple linebreak tag that makes the space between written text more digestible-->
     <br>
     <!--h3 is just h2 but smaller again-->
-    <h3> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolor nobis eos tenetur sint aliquam autem culpa fuga quasi nesciunt molestiae earum ab in, perferendis sed labore nulla non consequatur.</h3>
+    <h3> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolor nobis eos tenetur sint aliquam autem
+        culpa fuga quasi nesciunt molestiae earum ab in, perferendis sed labore nulla non consequatur.</h3>
     <br>
     <!--p tags stand for paragraphs. and are literally just made to enter in text-->
     <p>sample text in a P tag</p>
-        <!--a tags define a hyperlink which you can use to connect one website to another website.
+    <!--a tags define a hyperlink which you can use to connect one website to another website.
         this is how most websites communicate with different pages. a tags need an "href"
         to define where that link will be sending you. you can speccify the target by defining it with target=
         and then either blank or self, which wither opens a new tab or changes your current tab to the link
-        you can then give the link a title. which will make a small popup that appears when you hover over the link.-->
-        <a href="https://www.w3schools.com/tags/tag_a.asp" target=_self title="this explains what an A tag does">
-            link here
-        </a>
+        you can then give the link a title. which will make a small popup that appears when you hover over the link.
+        you can alse change the href to an email instead of a link to start the process of sending an email to said email-->
+    <a href="https://www.w3schools.com/tags/tag_a.asp" target=_self title="this explains what an A tag does">
+        what an A tag does
+    </a>
+    <!--img tags let you add images to a document by maging the img tag anddefining your immage source.
+        you can also define the height and with o the image by adding height= or width= withing the brackets.
+        if you only define one, the other scales accordingly. the alt atribute allows you to add discriptive text
+        for those visually paired using a screen reader. title tags give an image a small popup just like in <a> tags.
+        if you put an img in an <a> tag it can also become a link to lead to a new tab-->
+    <a href="https://pokemondb.net/pokedex/munna">
+        <img src="/images/munna.jpg" height="200" width="200" alt="this is an image of the 517th pokemon in the national pokedex, munna. 
+        the dream eater pokemon based on the japanese yokai, the baku." title=" roundest cutest pokemon">
+    </a>
+    <!--audio tags, like img tags allow you to add an audio file, as long as you list the source.
+        to add the music as a playable item you would have to add a true or fals command like "controls"
+        audio tags use something called boolean attributes which means they represent true or false commands.
+        like controls, autoplay and so on. other types of code also use bolean attrubutes.
+        controls lets the audio decide volume, what part to play and to pause or play the audio.-->
+    <audio controls loop>
+        <source src="/audio/01. Love Angel Syndrome.mp3">
+        <source src="/audio/02. First Encounter.mp3">
+    </audio>
 </body>
+
 </html>
